@@ -1,0 +1,160 @@
+:root{
+  /**Para los titulos*/
+  --black : rgba(60, 40, 40, 1);
+  /**Para los links*/
+  --light-brown : rgba(90, 90, 90, 1);
+  /**Para la nav bar*/
+  --intense-grey: rgb(230,228,225,1);
+  /**Para las cards o el carrusel*/
+  --medium-grey: rgb(230,228,225,0.75);
+  /**Para el fondo*/
+  --light-grey: rgb(230,228,225,0.5);
+  /**Por si a caso*/
+  --red : rgba(255, 40, 40, 1);
+}
+
+html, body, #root{
+  min-height: 100vh;
+}
+
+#root{
+  background-color: var(--light-grey);
+}
+
+.Home{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/public/images/Home/Background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.Home>h1{
+  font-family: "Lucida Console";
+  font-weight: bold;
+  font-size:150px;
+  font-family: 'Emoji';
+  color: var(--black);
+}
+
+.Home>a{
+  font-size:40px;
+  color:var(--light-brown);
+}
+
+.navbar{
+  background-color: var(--intense-grey);
+}
+
+.navbar .navbar-brand{
+  font-weight: bold;
+  color: var(--black);
+}
+
+.offcanvas-title{
+  font-weight: bold;
+  color: var(--black);
+}
+
+.ListRecetarios{
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ListRecetarios .card{
+  width:80%;
+  overflow:hidden;
+  background-color: var(--medium-grey);
+  margin-bottom: 25px;
+}
+
+.ListRecetarios .card .image{
+  min-height: 320px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ListRecetarios .card .image .text{
+  display:flex;
+  text-align: center;
+  align-items:center;
+  justify-content: center;
+  background-color: var(--medium-grey);
+  border: 3px solid var(--intense-grey);
+  width:50%;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  color: var(--black);
+}
+
+.ListRecetarios .card > .text{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+.ListRecetarios a{
+  font-size:30px;
+  color:var(--light-brown);
+}
+
+.ListRecetas{
+  margin-top: 25px;
+  display:flex;
+  justify-content: center;
+}
+
+.ListRecetas .carousel{
+  width: 80%;
+  min-height: 400px;
+}
+
+.ListRecetas .carousel-inner{
+  height: 100%;
+}
+
+.ListRecetas .carousel-item{
+  display:flex;
+  flex-direction: row;
+  height: 100%;
+  background-color: var(--medium-grey);
+}
+
+.ListRecetas .carousel-item .left{
+  display:flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items:center;
+  padding: 1% 0.5% 1% 1%;
+}
+
+.ListRecetas .carousel-item .right{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  width: 50%;
+  height: 100%;
+  padding: 1% 1% 1% 0.5%;
+}
+
+.ListRecetas .carousel-item .inside{
+  width: 100%;
+  height: 100%;
+}
+
+.ListRecetas .carousel-item .inside .title{
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  color: var(--black);
+  margin-bottom: 5px;
+}
